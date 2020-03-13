@@ -29,3 +29,6 @@ The resulting output is shown in the picture below:
 
 ![Test Producer Setup](resources/Spart_Image1.png)
 
+As the produce works fine, let's submit the spark streaming job:
+
+`spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.4 --master local[*] data_stream.py`
