@@ -11,11 +11,11 @@ Install all the requirement in the `requirements.txt`by running the command:
 
 Start the Zookeeper server:
 
-`usr/bin/zookeeper-server-start config/zookeeper.properties`
+`/usr/bin/zookeeper-server-start config/zookeeper.properties`
  
  Start the Kafka server (configured to port 9092):
  
-`usr/bin/kafka-server-start config/server.properties`
+`/usr/bin/kafka-server-start config/server.properties`
 
 By running the following command the producer will start to feed the topic
 
@@ -24,4 +24,8 @@ By running the following command the producer will start to feed the topic
 The console consumer can be used to visualize the messages sent to the topic `sf.police.calls` by the producer:
 
 `kafka-console-consumer --bootstrap-server localhost:9092 --topic sf.police.calls --from-beginning`
+
+The resulting output is shown in the picture below:
+
+![Test Producer Setup](Resources/spark_image1.png)
 
