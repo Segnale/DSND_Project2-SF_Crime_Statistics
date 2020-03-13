@@ -27,5 +27,5 @@ The console consumer can be used to visualize the messages sent to the topic `sf
 
 The resulting output is shown in the picture below:
 
-![Test Producer Setup](Resources/spark_image1.png)
+![Test Producer Setup](resources/Spart_Image1.png)
 
