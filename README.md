@@ -13,11 +13,11 @@ Start the Zookeeper server:
 
 `/usr/bin/zookeeper-server-start config/zookeeper.properties`
  
- Start the Kafka server (configured to port 9092):
+Start the Kafka server (configured to port 9092):
  
 `/usr/bin/kafka-server-start config/server.properties`
 
-By running the following command the producer will start to feed the topic
+By running the following command the producer will start to feed the topic:
 
 `python kafka_server.py`
 
@@ -27,8 +27,24 @@ The console consumer can be used to visualize the messages sent to the topic `sf
 
 The resulting output is shown in the picture below:
 
-![Test Producer Setup](resources/Spart_Image1.png)
+![Test Producer Setup](resources/Spark_Image1.png)
 
 As the produce works fine, let's submit the spark streaming job:
 
 `spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.4 --master local[*] data_stream.py`
+
+Spark start the execution an produce the following progress report at the first batch:
+
+![Progress report](resources/Spark_Image2.png)
+
+the resulting table of counted police call:
+
+![Results](resources/Spark_Image3.png)
+
+## Efficiency
+
+**1. How did changing values on the SparkSession property parameters affect the throughput and latency of the data?**
+
+
+**2. What were the 2-3 most efficient SparkSession property key/value pairs? Through testing multiple variations on values, how can you tell these were the most optimal?**
+
