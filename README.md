@@ -45,8 +45,7 @@ the resulting table of counted police call:
 
 **1. How did changing values on the SparkSession property parameters affect the throughput and latency of the data?**
 
-An idea of the throughput perfromance of the application can be observed looking at the `processedRowsPerSecond` of the Spark job (in the progress report of the pic above 631 /sec).
-
+An idea of the throughput perfromance of the application can be observed looking at the `processedRowsPerSecond` of the Spark job (in the progress report of the pic above 631 /sec). 
 A way to affect the processing time of batches is by playing with the parallelism. An increase of the parrallelism usually conveys a reduction of the processing time.
 
 **2. What were the 2-3 most efficient SparkSession property key/value pairs? Through testing multiple variations on values, how can you tell these were the most optimal?**
