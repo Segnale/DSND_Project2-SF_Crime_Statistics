@@ -41,7 +41,7 @@ the resulting table of counted police call:
 
 <img src="resources/Spark_Image3.png" width="350">
 
-## Efficiency
+## Performance
 
 **1. How did changing values on the SparkSession property parameters affect the throughput and latency of the data?**
 
