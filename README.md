@@ -35,11 +35,11 @@ As the produce works fine, let's submit the spark streaming job:
 
 Spark start the execution an produce the following progress report at the first batch:
 
-![Progress report](resources/Spark_Image2.png)
+<img src="resources/Spark_Image2.png" width="450">
 
 the resulting table of counted police call:
 
-![Results](resources/Spark_Image3.png)
+<img src="resources/Spark_Image3.png" width="350">
 
 ## Efficiency
 
